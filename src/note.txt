@@ -1,0 +1,208 @@
+react 
+
+it is a javascript libary for building user interface
+
+it is the view layer for web application 
+
+developed at facebook and relesed to the world in 2013
+
+it is deived some of the most widely used app, powering facebook 
+
+
+react features
+-----------------
+-easy to learn
+-simple
+-native approch
+-data binding
+-performance
+-testablity
+
+popular site use reactjs
+-------------------------
+-facebook
+-instagram
+-whatsapp
+-dropbox
+-yahoo mail
+
+
+
+
+
+instalaction
+---------------
+npx create-react-app myapp
+cd my-app
+npm start
+
+npx-node package execute
+npm-javascript package manager
+
+current version
+npm view react version
+
+		 			
+after instaling
+delete except index from public
+
+in src 4 files
+delete logo.svg, app.test.js, setuptest.js, reportwebvital.js
+
+app.js
+
+- line 1 remove 
+- header tag to header tag delete
+- index.js- 5th line and last line
+
+basic
+--------
+  components(basic building blocks of react)
+- react app starts with a single root component
+- root component is built using one or more component
+- each component can be nested with other component to any level
+
+
+
+JSX :
+  * jsx stands for javaScript Xml.
+  * jsx provides you to write html/xml the processor will transform these expression into actual j.s code 
+    eg- <div>Hello world</div>
+       Corresponding o.p
+         ---------------
+       React.createElement(" ");
+        Function :
+          * Every JSX is converdet to the React.Element function call that the browser understands.
+          * type - can be an HTMl tag like h1,div or it can be a REact components
+          * props - are the attributes you want the element to have
+          * children - contain the other 
+          * React.createElement(type)   
+
+        use of JSX :
+          *    
+        
+
+
+  Virtual DOM 
+  ------------
+   -> it is like lightWeight copy of the actual DOM(a virtual representation of the DOM)
+   -> it does not have the power to directly change the layout of the document
+   -> vertual DOM gets updated first instead of real DOM.
+   -> when anything new is added to the application, a vertual DOM is created and it is represented as a tree.
+   -> whenever there is a change in the state of any element.a new virtual DOM tree is created.
+    
+    * the process of comparing the current virtual DOM tree with the previous one is known as 'Diffing'
+    * the entire prosses of transforming changes to the real dom is called 'Reconcilation'      
+
+  Anatomy of a React component :
+ component rendering :
+      > when a component function executes we sayit 'renders'
+      > assume component may re-render at any time,our job is to ensure taht every time the compont re-render,the correct output is processed
+
+  componts in react :
+
+    * in react everithing is a component
+    * 2 types 1,function-based(stateless) 2,class-based(statefull)   
+  
+  function-based component
+  -----------------------
+    * stateless component
+    * we use hooks to change the component to statfull.
+
+    Hooks :
+    > Hooks were introduce in react 16.8.
+    > it is use Reacts features-like managinh your components state and or performing an after effect when certine changes occurs in state without writing a class.
+
+     state Hook :
+      * the React useState Hooks allows us to track state in the function component.
+      * state represent the value of a dynamic properties.
+      * syndax : const [val,setVal] = useState(100);
+
+        ->adding a state
+          1. import {useState} from 'react';
+          2. index = 0  , const [index,setIndex] = useState(0)
+            then : updating the value of the state :
+             function handleCLick(){
+              setIndex += 1 ;
+             }
+
+ props :
+      * props(properties) are compont
+
+
+react bootstrap instalation
+---------------------------
+
+google: react bootstrap 
+copy the link and past in to terminal : npm install react-bootstrap bootstrap
+css: <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/>
+and copy the css link and past into index file
+
+select the component from the site like nav bar ,card, button etc
+
+
+react metrial UI instalation
+----------------------------
+link:https://mui.com/material-ui/getting-started/installation/
+instalation first link 
+second link copy past
+
+
+react MDB bootstrap
+-------------------------
+mbd bootstrap ,dots-react, getstart
+instal :npm i mdb-react-ui-kit
+ index.js :css import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+fontawsam:npm i @fortawesome/fontawesome-free installation
+index.js:import "@fortawesome/fontawesome-free/css/all.min.css";
+
+google font
+---------------
+
+bootswatch
+----------
+link:https://bootswatch.com/
+choose 
+download : bootstrap.min.css
+
+inport to index.js file : import './bootstrap.min.css';
+
+components creation inside the src
+--------------------
+- components
+->header.jsx
+->footer.jsx
+->allrest.jsx
+->viewrest.jsx
+->restcard.jsx
+---------------------
+ app
+  |
+-headder
+-footer
+-allrest -> restcard
+
+backend creation using json-server(details in your ppt)
+
+API fetching using AXIOS (details in your ppt)
+
+Routing 
+
+localhost:3000 ->fetch all the restaurant details 
+localhost:3000/view/id -> view percicular restaurent details
+
+  The react-router-dom package contains bindings for using React Router in web applications.
+
+        Installation - npm i react-router-dom
+
+        ->BrowserRouter - Use all app routes are Routing (Used to render full application )
+        ->Routes -Used for multiple component to route
+        ->Route - Used for single component to route
+
+
+
